@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="hero">
+        <video autoplay loop muted id="video-background">
+            <source src="b.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <nav class="navbar">
+            <span class="logo">My Portfolio</span>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menu-button" aria-expanded="false" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Your Name</h1>
+            <p>Frontend Developer & UI/UX Enthusiast</p>
+        </div>
+    </header>
+
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a web developer passionate about creating modern,
+            responsive websites and applications. I enjoy learning new
+            technologies and improving my skills every day.
+        </p>
+    </section>
+
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://i.pinimg.com/originals/dc/55/a7/dc55a7baa9cbd457221ae6d12d9b1b51.jpg"
+                    alt="Preview of Project One">
+                <h3>Project One</h3>
+                <p>A short description of your first project goes here.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://cdn.wallpapersafari.com/9/45/zPp58bV.webp" alt="Preview of Project Two">
+                <h3>Project Two</h3>
+                <p>A short description of your second project goes here.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form id="contact-form-id" class="contact-form">
+            <input id="name" type="text" placeholder="Your Name" required>
+            <input id="email" type="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Message output for JS -->
+        <div id="form-message"></div>
+    </section>
+
+
+    <footer>
+        © 2025 Your Name. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
